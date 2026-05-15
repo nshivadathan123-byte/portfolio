@@ -123,7 +123,8 @@ nav ul li a {
     .social-icon-box:hover {
         background-color: #000;
     }
-    .social-icon-box img[alt="GitHub"] {
+    .social-icon-box img[alt="GitHub"],
+    .social-icon-box img[alt="Email"] {
         filter: invert(1);
     }
 }
