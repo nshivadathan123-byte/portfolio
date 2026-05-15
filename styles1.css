@@ -94,15 +94,38 @@ nav ul li a {
     object-fit: cover;
 }
 
-.social-links a {
-    color: #fff;
-    font-size: 1.5rem;
-    margin: 0 10px;
-    transition: color 0.3s;
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-.social-links a:hover {
-    color: #3498db;
+.social-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon-box:hover {
+    transform: translateY(-3px);
+    background-color: #e0e0e0;
+}
+
+@media (prefers-color-scheme: dark) {
+    .social-icon-box {
+        background-color: #1a1a1a;
+    }
+    .social-icon-box:hover {
+        background-color: #000;
+    }
+    .social-icon-box img[alt="GitHub"] {
+        filter: invert(1);
+    }
 }
 
 .skills-grid, .portfolio-grid {
