@@ -164,3 +164,39 @@ nav ul li a {
     transform: translateY(-5px);
 }
 
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    nav ul {
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li a {
+        margin: 5px 10px;
+    }
+    .container {
+        padding: 2rem 1.5rem;
+    }
+    #hero {
+        padding: 3rem 1.5rem;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .email-box {
+        padding: 0 10px;
+    }
+    .email-text {
+        font-size: 0.9rem;
+        word-break: break-all;
+    }
+}
