@@ -116,6 +116,16 @@ nav ul li a {
     background-color: #e0e0e0;
 }
 
+.email-box {
+    width: auto;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+.email-text {
+    font-weight: bold;
+}
+
 @media (prefers-color-scheme: dark) {
     .social-icon-box {
         background-color: #1a1a1a;
