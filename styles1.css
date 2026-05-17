@@ -21,7 +21,7 @@
         --card-shadow: rgba(0, 0, 0, 0.5);
         --header-bg: #0f172a;
         --link-color: #64b5f6;
-        --link-visited: #ce93d8;
+        --link-visited: #ea80fc;
         --link-hover: #90caf9;
     }
 }
@@ -96,6 +96,14 @@ nav ul li a:visited {
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: translateY(-2px);
+    color: #90caf9;
+    text-decoration: none;
 }
 
 
@@ -131,6 +139,7 @@ nav ul li a:visited {
     background-color: #f0f0f0;
     border-radius: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .social-icon-box:hover {
@@ -170,14 +179,23 @@ nav ul li a:visited {
     margin-top: 2rem;
 }
 
-.skill-card,
+.skill-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid transparent;
+}
+
 .project-card {
     background: var(--card-bg);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px var(--card-shadow);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 
 @media (prefers-color-scheme: dark) {
