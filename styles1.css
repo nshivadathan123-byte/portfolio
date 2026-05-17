@@ -2,9 +2,11 @@
     --bg-body: #ffffff;
     --bg-secondary: #f4f4f4;
     --text-main: #333333;
+    --text-muted: #666666;
     --card-bg: #ffffff;
     --card-border: transparent;
     --card-shadow: rgba(0, 0, 0, 0.1);
+    --card-accent: #3b82f6;
     --header-bg: #2c3e50;
     --header-text: #ffffff;
     --hero-gradient-start: #2c3e50;
@@ -16,6 +18,12 @@
     --link-hover: #003d82;
     --social-bg: #f0f0f0;
     --social-bg-hover: #e0e0e0;
+    --tag-bg: #e8f0fe;
+    --tag-text: #1a56db;
+    --tag-status-bg: #d1fae5;
+    --tag-status-text: #065f46;
+    --tag-wip-bg: #fef3c7;
+    --tag-wip-text: #92400e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,9 +31,11 @@
         --bg-body: #121212;
         --bg-secondary: #1e1e1e;
         --text-main: #e0e0e0;
+        --text-muted: #999999;
         --card-bg: #252525;
         --card-border: #333333;
         --card-shadow: rgba(0, 0, 0, 0.5);
+        --card-accent: #60a5fa;
         --header-bg: #0f172a;
         --hero-gradient-start: #0f172a;
         --hero-gradient-end: #1e293b;
@@ -36,6 +46,12 @@
         --link-hover: #90caf9;
         --social-bg: #1a1a1a;
         --social-bg-hover: #000000;
+        --tag-bg: #1e3a5f;
+        --tag-text: #93c5fd;
+        --tag-status-bg: #064e3b;
+        --tag-status-text: #6ee7b7;
+        --tag-wip-bg: #78350f;
+        --tag-wip-text: #fde68a;
     }
 
     .social-icon-box img[alt="GitHub"] {
@@ -47,7 +63,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -234,6 +250,19 @@ nav ul li a.active::after {
     box-shadow: 0 4px 6px var(--card-shadow);
     transition: transform 0.3s, box-shadow 0.3s;
     border: 1px solid var(--card-border);
+    border-top: 3px solid var(--card-accent);
+}
+
+.skill-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--text-main);
+}
+
+.card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
 }
 
 .skills-grid {
@@ -257,6 +286,34 @@ nav ul li a.active::after {
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px var(--card-shadow);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 14px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+}
+
+.tag-status {
+    background-color: var(--tag-status-bg);
+    color: var(--tag-status-text);
+}
+
+.tag-wip {
+    background-color: var(--tag-wip-bg);
+    color: var(--tag-wip-text);
 }
 
 .footer-contact {
