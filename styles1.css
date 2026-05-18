@@ -65,7 +65,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -212,6 +212,7 @@ nav ul li a.active::after {
     object-fit: cover;
 }
 
+
 .social-links {
     display: flex;
     justify-content: center;
@@ -258,8 +259,32 @@ nav ul li a.active::after {
 .skill-heading {
     font-size: 1rem;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
     color: var(--text-main);
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.pill {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    background-color: var(--tag-bg);
+    color: var(--tag-text);
+    border: 1px solid transparent;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pill:hover {
+    transform: translateY(-2px);
+    background-color: var(--card-accent);
+    color: #ffffff;
 }
 
 .card p {
@@ -267,9 +292,49 @@ nav ul li a.active::after {
     font-size: 0.95rem;
 }
 
+.education-card {
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+}
+
+.edu-degree {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.edu-institution {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.edu-year {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--card-accent);
+    white-space: nowrap;
+}
+
+.edu-description {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 2rem;
     list-style: none;

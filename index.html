@@ -18,9 +18,6 @@
     <title>N. Shivadathan | Profile</title>
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="stylesheet" href="styles1.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="main.js" defer></script>
 </head>
 
@@ -36,6 +33,7 @@
             </button>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -46,9 +44,10 @@
     <main>
         <section id="hero">
             <div class="hero-content">
-                <img src="assets/image.avif" alt="N. Shivadathan" class="profile-img" width="150" height="150">
+                <img src="assets/image.avif" alt="N. Shivadathan" class="profile-img" width="150" height="150"
+                    fetchpriority="high">
                 <h1>N. Shivadathan</h1>
-                <p>Integrated MCA Student & Software Developer</p>
+                <p>Integrated MCA Student &amp; Software Developer</p>
                 <div class="social-links">
                     <a href="https://github.com/nshivadathan123-byte" target="_blank" rel="noopener noreferrer"
                         class="social-icon-box" title="GitHub" aria-label="Visit my GitHub profile">
@@ -65,25 +64,67 @@
         <section id="about" class="container fade-in">
             <h2>About Me</h2>
             <p>I am an Integrated MCA student with a deep interest in web development and user experience design.
-                I enjoy building tools that solve real problems — from browser extensions that enhance reading
+                I enjoy building tools that solve real problems from browser extensions that enhance reading
                 experiences
                 to applications that make text more accessible through speech.</p>
         </section>
 
-        <section id="skills" class="bg-light fade-in">
-            <div class="container">
-                <h2>Technical Toolkit</h2>
-                <ul class="skills-grid">
-                    <li class="card">
-                        <h3 class="skill-heading">🌐 Languages</h3>
-                        <p>HTML, CSS, JavaScript &amp; Python</p>
-                    </li>
-                    <li class="card">
-                        <h3 class="skill-heading">⚙️ Tools &amp; Technologies</h3>
-                        <p>OCR, Text to Speech, Git &amp; Visual Studio</p>
-                    </li>
-                </ul>
+        <section id="education" class="container fade-in">
+            <h2>Education</h2>
+            <div class="education-card card">
+                <div class="edu-header">
+                    <div>
+                        <h3 class="edu-degree">Integrated MCA <span class="tag tag-wip">In Progress</span></h3>
+                        <p class="edu-institution">ICFAI University,Tripura</p>
+                    </div>
+                    <span class="edu-year">2025 &ndash; 2030</span>
+                </div>
+                <p class="edu-description">A 5-year integrated programme combining a Bachelors in
+                    Computer Applications with a Master of Computer Applications, covering software development,
+                    algorithms, databases, and modern web technologies.</p>
             </div>
+        </section>
+
+        <section id="skills" class="container fade-in">
+            <h2>Skills</h2>
+            <ul class="skills-grid">
+                <li class="card">
+                    <h3 class="skill-heading">🌐 Languages</h3>
+                    <div class="skill-pills">
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">Python</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <h3 class="skill-heading">🎨 Web Development</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Responsive Design</span>
+                        <span class="pill">DOM Manipulation</span>
+                        <span class="pill">CSS Animations</span>
+                        <span class="pill">Web APIs</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <h3 class="skill-heading">⚙️ Tools</h3>
+                    <div class="skill-pills">
+                        <span class="pill">Git</span>
+                        <span class="pill">VS Code</span>
+                        <span class="pill">Chrome DevTools</span>
+                        <span class="pill">GitHub Pages</span>
+                    </div>
+                </li>
+                <li class="card">
+                    <h3 class="skill-heading">🔬 Specialisations</h3>
+                    <div class="skill-pills">
+                        <span class="pill">OCR</span>
+                        <span class="pill">Text to Speech</span>
+                        <span class="pill">Browser Extensions</span>
+                        <span class="pill">Tesseract.js</span>
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <section id="portfolio" class="container fade-in">
