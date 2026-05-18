@@ -292,8 +292,7 @@ nav ul li a.active::after {
     font-size: 0.95rem;
 }
 
-.education-card {
-}
+.education-card {}
 
 .edu-header {
     display: flex;
