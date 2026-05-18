@@ -16,6 +16,7 @@
     --link-color: #0056b3;
     --link-visited: #6f42c1;
     --link-hover: #003d82;
+    --nav-hover: #60a5fa;
     --social-bg: #f0f0f0;
     --social-bg-hover: #e0e0e0;
     --tag-bg: #e8f0fe;
@@ -44,6 +45,7 @@
         --link-color: #64b5f6;
         --link-visited: #ea80fc;
         --link-hover: #90caf9;
+        --nav-hover: #90caf9;
         --social-bg: #1a1a1a;
         --social-bg-hover: #000000;
         --tag-bg: #1e3a5f;
@@ -142,12 +144,12 @@ nav ul li a:visited {
 
 nav ul li a:hover {
     transform: translateY(-2px);
-    color: var(--link-hover);
+    color: var(--nav-hover);
     text-decoration: none;
 }
 
 nav ul li a.active {
-    color: var(--link-hover);
+    color: var(--nav-hover);
     position: relative;
 }
 
@@ -158,7 +160,7 @@ nav ul li a.active::after {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: var(--link-hover);
+    background-color: var(--nav-hover);
     border-radius: 1px;
 }
 
