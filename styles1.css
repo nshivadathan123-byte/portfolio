@@ -7,7 +7,7 @@
     --card-border: transparent;
     --card-shadow: rgba(0, 0, 0, 0.1);
     --card-accent: #3b82f6;
-    --header-bg: #2c3e50;
+    --header-bg: #1a2a38;
     --header-text: #ffffff;
     --hero-gradient-start: #2c3e50;
     --hero-gradient-end: #34495e;
@@ -37,7 +37,7 @@
         --card-border: #333333;
         --card-shadow: rgba(0, 0, 0, 0.5);
         --card-accent: #60a5fa;
-        --header-bg: #0f172a;
+        --header-bg: #060e1a;
         --hero-gradient-start: #0f172a;
         --hero-gradient-end: #1e293b;
         --hero-text: #e0e0e0;
@@ -197,7 +197,7 @@ nav ul li a.active::after {
 }
 
 #hero {
-    background: linear-gradient(135deg, var(--hero-gradient-start) 0%, var(--hero-gradient-end) 100%);
+    background: var(--hero-gradient-start);
     color: var(--hero-text);
     text-align: center;
     padding: 5rem 2rem;
