@@ -1,23 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Hamburger Menu ---
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', () => {
-        const isOpen = navMenu.classList.toggle('open');
-        hamburger.classList.toggle('active');
-        hamburger.setAttribute('aria-expanded', isOpen);
-    });
-
-    navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-            hamburger.classList.remove('active');
-            hamburger.setAttribute('aria-expanded', 'false');
-        });
-    });
-
     // --- Scroll Fade-In (Intersection Observer) ---
     const fadeElements = document.querySelectorAll('.fade-in');
 
